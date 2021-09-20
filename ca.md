@@ -6,6 +6,7 @@ draft: false
 ### **CA**  
 CA (Certificate Authority) 是自签名的根证书，用来签名后续创建的其它证书。本文档使用 CloudFlare 的 PKI 工具集 cfssl 创建所有证书。为确保安全，kubernetes 系统各组件需要使用 x509 证书对通信进行加密和认证。
 
+
 -----
 #### 安装 cfssl 工具集
 ```shell
