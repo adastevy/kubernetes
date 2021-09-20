@@ -1,0 +1,501 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>08.验证集群功能 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="kube-proxy.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    00.组件版本和配置策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="os-init.html">
+            
+                <a href="os-init.html">
+            
+                    
+                    01.系统初始化和全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ca.html">
+            
+                <a href="ca.html">
+            
+                    
+                    02.创建CA证书和秘钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="kubectl.html">
+            
+                <a href="kubectl.html">
+            
+                    
+                    03.部署kubectl命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="etcd.html">
+            
+                <a href="etcd.html">
+            
+                    
+                    04.部署etcd集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="flannel.html">
+            
+                <a href="flannel.html">
+            
+                    
+                    05.部署flannel网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="master.html">
+            
+                <a href="master.html">
+            
+                    
+                    06.部署master节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="kube-apiserver.html">
+            
+                <a href="kube-apiserver.html">
+            
+                    
+                    06-2.api-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="kube-controller-manager.html">
+            
+                <a href="kube-controller-manager.html">
+            
+                    
+                    06-3.controller-manager集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="kube-scheduler集群.html">
+            
+                <a href="kube-scheduler集群.html">
+            
+                    
+                    06-4.scheduler集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    07.部署worker节点
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    07-1.docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="kubelet.html">
+            
+                <a href="kubelet.html">
+            
+                    
+                    07-2.kubelet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="kube-proxy.html">
+            
+                <a href="kube-proxy.html">
+            
+                    
+                    07-3.kube-proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="verify.html">
+            
+                <a href="verify.html">
+            
+                    
+                    08.验证集群功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >08.验证集群功能</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x672C;&#x6587;&#x6863;&#x4F7F;&#x7528; daemonset &#x9A8C;&#x8BC1; master &#x548C; worker &#x8282;&#x70B9;&#x662F;&#x5426;&#x5DE5;&#x4F5C;&#x6B63;&#x5E38;&#x3002;</p>
+<h4 id="&#x68C0;&#x67E5;&#x8282;&#x70B9;&#x72B6;&#x6001;">&#x68C0;&#x67E5;&#x8282;&#x70B9;&#x72B6;&#x6001;</h4>
+<pre><code>[root@master01 ~]# kubectl  get node
+NAME             STATUS   ROLES    AGE    VERSION
+192.168.10.242   Ready    &lt;none&gt;   114m   v1.12.0-rc.2
+</code></pre><hr>
+<h4 id="&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;">&#x521B;&#x5EFA;&#x6D4B;&#x8BD5;&#x6587;&#x4EF6;</h4>
+<pre><code>cat &gt; nginx-dp.yml &lt;&lt;EOF
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  type: NodePort
+  selector:
+    app: nginx
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    addonmanager.kubernetes.io/mode: Reconcile
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: my-nginx
+        image: nginx:latest
+        imagePullPolicy :IfNotPresent
+        ports:
+        - containerPort: 80
+EOF
+</code></pre><p><strong><em>&#x6267;&#x884C;&#x5B9A;&#x4E49;&#x6587;&#x4EF6;</em></strong></p>
+<pre><code># kubectl  create -f nginx-dp.yml                 
+service/nginx created
+deployment.extensions/nginx created
+</code></pre><h4 id="&#x68C0;&#x67E5;&#x5404;-node-&#x4E0A;&#x7684;-pod-ip-&#x8FDE;&#x901A;&#x6027;">&#x68C0;&#x67E5;&#x5404; Node &#x4E0A;&#x7684; Pod IP &#x8FDE;&#x901A;&#x6027;</h4>
+<pre><code># kubectl  get svc          
+NAME         TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+kubernetes   ClusterIP   10.254.0.1      &lt;none&gt;        443/TCP        6h39m
+nginx        NodePort    10.254.76.145   &lt;none&gt;        80:37172/TCP   4m45s
+# curl node01:37172
+
+# kubectl  get pod -o wide
+NAME                    READY   STATUS    RESTARTS   AGE    IP            NODE             NOMINATED NODE
+httpd-7db5849b8-9bhxv   1/1     Running   0          109m   172.30.14.2   192.168.10.242   &lt;none&gt;
+httpod                  1/1     Running   0          105m   172.30.14.4   192.168.10.242   &lt;none&gt;
+nginx-6b5f8bf67-bs8n4   1/1     Running   0          13m    172.30.14.3   192.168.10.242   &lt;none&gt;
+
+# kubectl  run busybox --image=busybox --image-pull-policy=IfNotPresent --restart=Never --command -- ping 172.30.14.3
+# kubectl  logs busybox
+PING 172.30.14.3 (172.30.14.3): 56 data bytes
+64 bytes from 172.30.14.3: seq=0 ttl=64 time=0.192 ms
+64 bytes from 172.30.14.3: seq=1 ttl=64 time=0.171 ms
+64 bytes from 172.30.14.3: seq=2 ttl=64 time=0.166 ms
+64 bytes from 172.30.14.3: seq=3 ttl=64 time=0.169 ms
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kube-proxy.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 07-3.kube-proxy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"08.验证集群功能","date":"2019-03-16T15:22:26.000Z","draft":false,"level":"1.10","depth":1,"previous":{"title":"07-3.kube-proxy","level":"1.9.3","depth":2,"path":"kube-proxy.md","ref":"kube-proxy.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"verify.md","mtime":"2019-03-16T15:56:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-20T13:46:05.974Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

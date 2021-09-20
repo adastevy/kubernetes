@@ -1,0 +1,566 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>01.系统初始化和全局变量 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ca.html" />
+    
+    
+    <link rel="prev" href="version.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    00.组件版本和配置策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="os-init.html">
+            
+                <a href="os-init.html">
+            
+                    
+                    01.系统初始化和全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ca.html">
+            
+                <a href="ca.html">
+            
+                    
+                    02.创建CA证书和秘钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="kubectl.html">
+            
+                <a href="kubectl.html">
+            
+                    
+                    03.部署kubectl命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="etcd.html">
+            
+                <a href="etcd.html">
+            
+                    
+                    04.部署etcd集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="flannel.html">
+            
+                <a href="flannel.html">
+            
+                    
+                    05.部署flannel网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="master.html">
+            
+                <a href="master.html">
+            
+                    
+                    06.部署master节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="kube-apiserver.html">
+            
+                <a href="kube-apiserver.html">
+            
+                    
+                    06-2.api-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="kube-controller-manager.html">
+            
+                <a href="kube-controller-manager.html">
+            
+                    
+                    06-3.controller-manager集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="kube-scheduler集群.html">
+            
+                <a href="kube-scheduler集群.html">
+            
+                    
+                    06-4.scheduler集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    07.部署worker节点
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    07-1.docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="kubelet.html">
+            
+                <a href="kubelet.html">
+            
+                    
+                    07-2.kubelet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="kube-proxy.html">
+            
+                <a href="kube-proxy.html">
+            
+                    
+                    07-3.kube-proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="verify.html">
+            
+                <a href="verify.html">
+            
+                    
+                    08.验证集群功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >01.系统初始化和全局变量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x51C6;&#x5907;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;">&#x51C6;&#x5907;&#x7CFB;&#x7EDF;&#x73AF;&#x5883;</h4>
+<p>os version: centos 7</p>
+<hr>
+<h4 id="&#x90E8;&#x7F72;&#x62D3;&#x6251;&#xFF1A;">&#x90E8;&#x7F72;&#x62D3;&#x6251;&#xFF1A;</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Hostname</th>
+<th style="text-align:left">IP</th>
+<th style="text-align:left">Roles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">master01</td>
+<td style="text-align:left">192.168.10.232</td>
+<td style="text-align:left">kube-apiserver kube-controllermanager kube-scheduler etcd</td>
+</tr>
+<tr>
+<td style="text-align:left">node01</td>
+<td style="text-align:left">192.168.10.242</td>
+<td style="text-align:left">kubelet</td>
+</tr>
+<tr>
+<td style="text-align:left">node02</td>
+<td style="text-align:left">192.168.10.243</td>
+<td style="text-align:left">kubelet</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x540D;&#x89E3;&#x6790;">&#x6DFB;&#x52A0;&#x4E3B;&#x673A;&#x540D;&#x89E3;&#x6790;</h4>
+<pre><code class="lang-bash"><span class="hljs-comment"># cat /etc/hosts</span>
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.10.242 node01
+192.168.10.243 node02
+192.168.10.232 maste01
+</code></pre>
+<hr>
+<h4 id="&#x5B89;&#x88C5;&#x7CFB;&#x7EDF;&#x4F9D;&#x8D56;">&#x5B89;&#x88C5;&#x7CFB;&#x7EDF;&#x4F9D;&#x8D56;</h4>
+<pre><code># yum install -y epel-release
+# yum install -y conntrack ipvsadm ipset jq sysstat curl iptables libseccomp
+</code></pre><hr>
+<h4 id="&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;">&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;</h4>
+<pre><code>#  systemctl stop firewalld
+#  systemctl disable firewalld
+#  iptables -F &amp;&amp;  iptables -X &amp;&amp;  iptables -F -t nat &amp;&amp;  iptables -X -t nat
+#  iptables -P FORWARD ACCEPT
+</code></pre><hr>
+<h4 id="&#x5173;&#x95ED;-swap-&#x5206;&#x533A;">&#x5173;&#x95ED; swap &#x5206;&#x533A;</h4>
+<pre><code># swapoff -a
+</code></pre><p>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x5F00;&#x673A;&#x81EA;&#x52A8;&#x6302;&#x8F7D; swap &#x5206;&#x533A;&#xFF0C;&#x53EF;&#x4EE5;&#x6CE8;&#x91CA; /etc/fstab &#x4E2D;&#x76F8;&#x5E94;&#x7684;&#x6761;&#x76EE;&#xFF1A;</p>
+<pre><code># sed -i &apos;/ swap / s/^\(.*\)$/#\1/g&apos; /etc/fstab
+</code></pre><hr>
+<h4 id="&#x5173;&#x95ED;-selinux&#xFF0C;&#x5426;&#x5219;&#x540E;&#x7EED;-k8s-&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x65F6;&#x53EF;&#x80FD;&#x62A5;&#x9519;-permission-denied&#xFF1A;">&#x5173;&#x95ED; SELinux&#xFF0C;&#x5426;&#x5219;&#x540E;&#x7EED; K8S &#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x65F6;&#x53EF;&#x80FD;&#x62A5;&#x9519; Permission denied&#xFF1A;</h4>
+<pre><code># setenforce 0
+# grep SELINUX /etc/selinux/config
+SELINUX=disabled
+</code></pre><hr>
+<h4 id="&#x5173;&#x95ED;-dnsmasq-&#x53EF;&#x9009;">&#x5173;&#x95ED; dnsmasq (&#x53EF;&#x9009;)</h4>
+<p>linux &#x7CFB;&#x7EDF;&#x5F00;&#x542F;&#x4E86; dnsmasq &#x540E;(&#x5982; GUI &#x73AF;&#x5883;)&#xFF0C;&#x5C06;&#x7CFB;&#x7EDF; DNS Server &#x8BBE;&#x7F6E;&#x4E3A; 127.0.0.1&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4; docker &#x5BB9;&#x5668;&#x65E0;&#x6CD5;&#x89E3;&#x6790;&#x57DF;&#x540D;&#xFF0C;&#x9700;&#x8981;&#x5173;&#x95ED;&#x5B83;&#xFF1A;</p>
+<pre><code># service dnsmasq stop
+# systemctl disable dnsmasq
+</code></pre><hr>
+<h4 id="&#x5B89;&#x88C5;&#x7F51;&#x7EDC;&#x6A21;&#x5757;">&#x5B89;&#x88C5;&#x7F51;&#x7EDC;&#x6A21;&#x5757;</h4>
+<pre><code># modprobe br_netfilter
+# modprobe ip_vs
+</code></pre><hr>
+<h4 id="&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;">&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;</h4>
+<pre><code># cat &gt; kubernetes.conf &lt;&lt;EOF
+net.bridge.bridge-nf-call-iptables=1
+net.bridge.bridge-nf-call-ip6tables=1
+net.ipv4.ip_forward=1
+net.ipv4.tcp_tw_recycle=0
+vm.swappiness=0
+vm.overcommit_memory=1
+vm.panic_on_oom=0
+fs.inotify.max_user_watches=89100
+fs.file-max=52706963
+fs.nr_open=52706963
+net.ipv6.conf.all.disable_ipv6=1
+net.netfilter.nf_conntrack_max=2310720
+EOF
+# cp kubernetes.conf  /etc/sysctl.d/kubernetes.conf
+# sysctl -p /etc/sysctl.d/kubernetes.conf
+# mount -t cgroup -o cpu,cpuacct none /sys/fs/cgroup/cpu,cpuacct
+</code></pre><p><strong>PS:</strong>  </p>
+<ul>
+<li>cp_tw_recycle &#x548C; Kubernetes &#x7684; NAT &#x51B2;&#x7A81;&#xFF0C;&#x5FC5;&#x987B;&#x5173;&#x95ED; &#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x5BFC;&#x81F4;&#x670D;&#x52A1;&#x4E0D;&#x901A;&#xFF1B;  </li>
+<li>&#x5173;&#x95ED;&#x4E0D;&#x4F7F;&#x7528;&#x7684; IPV6 &#x534F;&#x8BAE;&#x6808;&#xFF0C;&#x9632;&#x6B62;&#x89E6;&#x53D1; docker BUG&#xFF1B;</li>
+</ul>
+<hr>
+<h4 id="&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x533A;">&#x8BBE;&#x7F6E;&#x7CFB;&#x7EDF;&#x65F6;&#x533A;</h4>
+<pre><code>&#x8C03;&#x6574;&#x7CFB;&#x7EDF; TimeZone
+# timedatectl set-timezone Asia/Shanghai
+
+&#x66F4;&#x65B0;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;
+# ntpdate cn.pool.ntp.org
+
+&#x5C06;&#x5F53;&#x524D;&#x7684; UTC &#x65F6;&#x95F4;&#x5199;&#x5165;&#x786C;&#x4EF6;&#x65F6;&#x949F;
+# timedatectl set-local-rtc 0
+
+&#x91CD;&#x542F;&#x4F9D;&#x8D56;&#x4E8E;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;&#x7684;&#x670D;&#x52A1;
+# systemctl restart rsyslog
+# systemctl restart crond
+</code></pre><hr>
+<h4 id="&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;">&#x521B;&#x5EFA;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;</h4>
+<pre><code># mkdir -p /opt/k8s/bin
+# chown -R k8s /opt/k8s
+
+# mkdir -p /etc/kubernetes/cert
+# chown -R k8s /etc/kubernetes
+
+master only:
+# mkdir -p /etc/etcd/cert
+# chown -R k8s /etc/etcd/cert
+# mkdir -p /var/lib/etcd &amp;&amp; chown -R k8s /etc/etcd/cert
+</code></pre><hr>
+<h4 id="&#x5C06;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;-optk8sbin-&#x6DFB;&#x52A0;&#x5230;-path-&#x53D8;&#x91CF;&#x4E2D;">&#x5C06;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84; /opt/k8s/bin &#x6DFB;&#x52A0;&#x5230; PATH &#x53D8;&#x91CF;&#x4E2D;</h4>
+<pre><code># sh -c &quot;echo &apos;export PATH=/opt/k8s/bin:$PATH&apos; &gt;&gt; ~/.bashrc&quot;
+# source ~/.bashrc
+</code></pre><hr>
+<h4 id="&#x6DFB;&#x52A0;-k8s-&#x8D26;&#x6237;">&#x6DFB;&#x52A0; k8s &#x8D26;&#x6237;</h4>
+<p>useradd -m k8s
+sh -c &apos;echo 123456 | passwd k8s --stdin&apos; # &#x4E3A; k8s &#x8D26;&#x6237;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="version.html" class="navigation navigation-prev " aria-label="Previous page: 00.组件版本和配置策略">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ca.html" class="navigation navigation-next " aria-label="Next page: 02.创建CA证书和秘钥">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"01.系统初始化和全局变量","date":"2019-03-16T01:38:20.000Z","draft":false,"level":"1.3","depth":1,"next":{"title":"02.创建CA证书和秘钥","level":"1.4","depth":1,"path":"ca.md","ref":"ca.md","articles":[]},"previous":{"title":"00.组件版本和配置策略","level":"1.2","depth":1,"path":"version.md","ref":"version.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"os-init.md","mtime":"2019-03-16T16:05:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-20T13:46:05.974Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

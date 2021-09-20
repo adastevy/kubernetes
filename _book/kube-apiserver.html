@@ -1,0 +1,602 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>06-2.api-server · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kube-controller-manager.html" />
+    
+    
+    <link rel="prev" href="master.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    00.组件版本和配置策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="os-init.html">
+            
+                <a href="os-init.html">
+            
+                    
+                    01.系统初始化和全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ca.html">
+            
+                <a href="ca.html">
+            
+                    
+                    02.创建CA证书和秘钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="kubectl.html">
+            
+                <a href="kubectl.html">
+            
+                    
+                    03.部署kubectl命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="etcd.html">
+            
+                <a href="etcd.html">
+            
+                    
+                    04.部署etcd集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="flannel.html">
+            
+                <a href="flannel.html">
+            
+                    
+                    05.部署flannel网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="master.html">
+            
+                <a href="master.html">
+            
+                    
+                    06.部署master节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.8.1" data-path="kube-apiserver.html">
+            
+                <a href="kube-apiserver.html">
+            
+                    
+                    06-2.api-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="kube-controller-manager.html">
+            
+                <a href="kube-controller-manager.html">
+            
+                    
+                    06-3.controller-manager集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="kube-scheduler集群.html">
+            
+                <a href="kube-scheduler集群.html">
+            
+                    
+                    06-4.scheduler集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    07.部署worker节点
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    07-1.docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="kubelet.html">
+            
+                <a href="kubelet.html">
+            
+                    
+                    07-2.kubelet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="kube-proxy.html">
+            
+                <a href="kube-proxy.html">
+            
+                    
+                    07-3.kube-proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="verify.html">
+            
+                <a href="verify.html">
+            
+                    
+                    08.验证集群功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >06-2.api-server</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h4 id="&#x521B;&#x5EFA;-kubernetes-&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;">&#x521B;&#x5EFA; kubernetes &#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;</h4>
+<p><strong><em>&#x521B;&#x5EFA;&#x8BC1;&#x4E66;&#x7B7E;&#x540D;&#x8BF7;&#x6C42;&#xFF1A;</em></strong></p>
+<pre><code>export  CLUSTER_KUBERNETES_SVC_IP=&quot;10.254.0.1&quot;
+cat &gt; kubernetes-csr.json &lt;&lt;EOF
+{
+  &quot;CN&quot;: &quot;kubernetes&quot;,
+  &quot;hosts&quot;: [
+    &quot;127.0.0.1&quot;,
+    &quot;192.168.10.232&quot;,
+    &quot;192.168.10.243&quot;,
+    &quot;192.168.10.242&quot;,
+    &quot;${CLUSTER_KUBERNETES_SVC_IP}&quot;,
+    &quot;kubernetes&quot;,
+    &quot;kubernetes.default&quot;,
+    &quot;kubernetes.default.svc&quot;,
+    &quot;kubernetes.default.svc.cluster&quot;,
+    &quot;kubernetes.default.svc.cluster.local&quot;
+  ],
+  &quot;key&quot;: {
+    &quot;algo&quot;: &quot;rsa&quot;,
+    &quot;size&quot;: 2048
+  },
+  &quot;names&quot;: [
+    {
+      &quot;C&quot;: &quot;CN&quot;,
+      &quot;ST&quot;: &quot;BeiJing&quot;,
+      &quot;L&quot;: &quot;BeiJing&quot;,
+      &quot;O&quot;: &quot;k8s&quot;,
+      &quot;OU&quot;: &quot;4Paradigm&quot;
+    }
+  ]
+}
+EOF
+</code></pre><p><strong><em>PS:</em></strong></p>
+<pre><code>hosts &#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x6388;&#x6743;&#x4F7F;&#x7528;&#x8BE5;&#x8BC1;&#x4E66;&#x7684; IP &#x6216;&#x57DF;&#x540D;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x4E86; apiserver &#x8282;&#x70B9; IP&#x3001;kubernetes &#x670D;&#x52A1; IP &#x548C;&#x57DF;&#x540D;,VIP&#x6682;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#xFF1B;
+&#x57DF;&#x540D;&#x6700;&#x540E;&#x5B57;&#x7B26;&#x4E0D;&#x80FD;&#x662F; . (&#x5982;&#x4E0D;&#x80FD;&#x4E3A; kubernetes.default.svc.cluster.local.)&#xFF0C;&#x5426;&#x5219;&#x89E3;&#x6790;&#x65F6;&#x5931;&#x8D25;&#xFF0C;&#x63D0;&#x793A;&#xFF1A; x509: cannot parse dnsName &quot;kubernetes.default.svc.cluster.local.&quot;&#xFF1B;
+&#x5982;&#x679C;&#x4F7F;&#x7528;&#x975E; cluster.local &#x57DF;&#x540D;&#xFF0C;&#x5982; opsnull.com&#xFF0C;&#x5219;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x57DF;&#x540D;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E24;&#x4E2A;&#x57DF;&#x540D;&#x4E3A;&#xFF1A;kubernetes.default.svc.opsnull&#x3001;kubernetes.default.svc.opsnull.com
+kubernetes &#x670D;&#x52A1; IP &#x662F; apiserver &#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x662F; --service-cluster-ip-range &#x53C2;&#x6570;&#x6307;&#x5B9A;&#x7684;&#x7F51;&#x6BB5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;IP&#xFF0C;&#x540E;&#x7EED;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x83B7;&#x53D6;&#xFF1A;
+  $ kubectl get svc kubernetes
+  NAME         CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+  kubernetes   10.254.0.1   &lt;none&gt;        443/TCP   1d
+</code></pre><p><strong><em>&#x751F;&#x6210;&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;&#xFF1A;</em></strong>  </p>
+<pre><code>cfssl gencert -ca=/etc/kubernetes/cert/ca.pem \
+  -ca-key=/etc/kubernetes/cert/ca-key.pem \
+  -config=/etc/kubernetes/cert/ca-config.json \
+  -profile=kubernetes kubernetes-csr.json | cfssljson -bare kubernetes
+ls kubernetes*pem
+</code></pre><p>&#x5C06;&#x751F;&#x6210;&#x7684;&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x5230; master &#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code># cp kubernetes*.pem /etc/kubernetes/cert/
+# chown -R k8s /etc/kubernetes/cert/
+</code></pre><hr>
+<h4 id="&#x521B;&#x5EFA;-kube-apiserver-systemd-unit-&#x6A21;&#x677F;&#x6587;&#x4EF6;">&#x521B;&#x5EFA; kube-apiserver systemd unit &#x6A21;&#x677F;&#x6587;&#x4EF6;</h4>
+<pre><code>export ETCD_ENDPOINTS=&quot;https://192.168.10.232:2379&quot;
+export NODE_PORT_RANGE=&quot;30000-60000&quot;
+export SERVICE_CIDR=&quot;10.254.0.0/16&quot;
+
+cat &gt; kube-apiserver.service.template &lt;&lt;EOF
+[Unit]
+Description=Kubernetes API Server
+Documentation=https://github.com/GoogleCloudPlatform/kubernetes
+After=network.target
+
+[Service]
+ExecStart=/opt/k8s/bin/kube-apiserver \\
+  --enable-admission-plugins=Initializers,NamespaceLifecycle,NodeRestriction,LimitRanger,ServiceAccount,DefaultStorageClass,ResourceQuota \\
+  --anonymous-auth=false \\
+  --advertise-address=##NODE_IP## \\
+  --bind-address=##NODE_IP## \\
+  --insecure-port=0 \\
+  --authorization-mode=Node,RBAC \\
+  --runtime-config=api/all \\
+  --enable-bootstrap-token-auth \\
+  --service-cluster-ip-range=${SERVICE_CIDR} \\
+  --service-node-port-range=${NODE_PORT_RANGE} \\
+  --tls-cert-file=/etc/kubernetes/cert/kubernetes.pem \\
+  --tls-private-key-file=/etc/kubernetes/cert/kubernetes-key.pem \\
+  --client-ca-file=/etc/kubernetes/cert/ca.pem \\
+  --kubelet-client-certificate=/etc/kubernetes/cert/kubernetes.pem \\
+  --kubelet-client-key=/etc/kubernetes/cert/kubernetes-key.pem \\
+  --service-account-key-file=/etc/kubernetes/cert/ca-key.pem \\
+  --etcd-cafile=/etc/kubernetes/cert/ca.pem \\
+  --etcd-certfile=/etc/kubernetes/cert/kubernetes.pem \\
+  --etcd-keyfile=/etc/kubernetes/cert/kubernetes-key.pem \\
+  --etcd-servers=${ETCD_ENDPOINTS} \\
+  --enable-swagger-ui=true \\
+  --allow-privileged=true \\
+  --apiserver-count=3 \\
+  --audit-log-maxage=30 \\
+  --audit-log-maxbackup=3 \\
+  --audit-log-maxsize=100 \\
+  --audit-log-path=/var/log/kube-apiserver-audit.log \\
+  --event-ttl=1h \\
+  --alsologtostderr=true \\
+  --logtostderr=false \\
+  --log-dir=/var/log/kubernetes \\
+  --v=2
+Restart=on-failure
+RestartSec=5
+Type=notify
+User=k8s
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+EOF
+</code></pre><p><strong><em>PS&#xFF1A;</em></strong></p>
+<pre><code>--experimental-encryption-provider-config&#xFF1A;&#x542F;&#x7528;&#x52A0;&#x5BC6;&#x7279;&#x6027;&#xFF1B;
+--authorization-mode=Node,RBAC&#xFF1A; &#x5F00;&#x542F; Node &#x548C; RBAC &#x6388;&#x6743;&#x6A21;&#x5F0F;&#xFF0C;&#x62D2;&#x7EDD;&#x672A;&#x6388;&#x6743;&#x7684;&#x8BF7;&#x6C42;&#xFF1B;
+--enable-admission-plugins&#xFF1A;&#x542F;&#x7528; ServiceAccount &#x548C; NodeRestriction&#xFF1B;
+--service-account-key-file&#xFF1A;&#x7B7E;&#x540D; ServiceAccount Token &#x7684;&#x516C;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;kube-controller-manager &#x7684; --service-account-private-key-file &#x6307;&#x5B9A;&#x79C1;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;&#x4E24;&#x8005;&#x914D;&#x5BF9;&#x4F7F;&#x7528;&#xFF1B;
+--tls-*-file&#xFF1A;&#x6307;&#x5B9A; apiserver &#x4F7F;&#x7528;&#x7684;&#x8BC1;&#x4E66;&#x3001;&#x79C1;&#x94A5;&#x548C; CA &#x6587;&#x4EF6;&#x3002;--client-ca-file &#x7528;&#x4E8E;&#x9A8C;&#x8BC1; client (kue-controller-manager&#x3001;kube-scheduler&#x3001;kubelet&#x3001;kube-proxy &#x7B49;)&#x8BF7;&#x6C42;&#x6240;&#x5E26;&#x7684;&#x8BC1;&#x4E66;&#xFF1B;
+--kubelet-client-certificate&#x3001;--kubelet-client-key&#xFF1A;&#x5982;&#x679C;&#x6307;&#x5B9A;&#xFF0C;&#x5219;&#x4F7F;&#x7528; https &#x8BBF;&#x95EE; kubelet APIs&#xFF1B;&#x9700;&#x8981;&#x4E3A;&#x8BC1;&#x4E66;&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x6237;(&#x4E0A;&#x9762; kubernetes*.pem &#x8BC1;&#x4E66;&#x7684;&#x7528;&#x6237;&#x4E3A; kubernetes) &#x7528;&#x6237;&#x5B9A;&#x4E49; RBAC &#x89C4;&#x5219;&#xFF0C;&#x5426;&#x5219;&#x8BBF;&#x95EE; kubelet API &#x65F6;&#x63D0;&#x793A;&#x672A;&#x6388;&#x6743;&#xFF1B;
+--bind-address&#xFF1A; &#x4E0D;&#x80FD;&#x4E3A; 127.0.0.1&#xFF0C;&#x5426;&#x5219;&#x5916;&#x754C;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x5B83;&#x7684;&#x5B89;&#x5168;&#x7AEF;&#x53E3; 6443&#xFF1B;
+--insecure-port=0&#xFF1A;&#x5173;&#x95ED;&#x76D1;&#x542C;&#x975E;&#x5B89;&#x5168;&#x7AEF;&#x53E3;(8080)&#xFF1B;
+--service-cluster-ip-range&#xFF1A; &#x6307;&#x5B9A; Service Cluster IP &#x5730;&#x5740;&#x6BB5;&#xFF1B;
+--service-node-port-range&#xFF1A; &#x6307;&#x5B9A; NodePort &#x7684;&#x7AEF;&#x53E3;&#x8303;&#x56F4;&#xFF1B;
+--runtime-config=api/all=true&#xFF1A; &#x542F;&#x7528;&#x6240;&#x6709;&#x7248;&#x672C;&#x7684; APIs&#xFF0C;&#x5982; autoscaling/v2alpha1&#xFF1B;
+--enable-bootstrap-token-auth&#xFF1A;&#x542F;&#x7528; kubelet bootstrap &#x7684; token &#x8BA4;&#x8BC1;&#xFF1B;
+--apiserver-count=3&#xFF1A;&#x6307;&#x5B9A;&#x96C6;&#x7FA4;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x591A;&#x53F0; kube-apiserver &#x4F1A;&#x901A;&#x8FC7; leader &#x9009;&#x4E3E;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x5B83;&#x8282;&#x70B9;&#x5904;&#x4E8E;&#x963B;&#x585E;&#x72B6;&#x6001;&#xFF1B;
+User=k8s&#xFF1A;&#x4F7F;&#x7528; k8s &#x8D26;&#x6237;&#x8FD0;&#x884C;&#xFF1B;
+</code></pre><hr>
+<h4 id="&#x4E3A;&#x5404;&#x8282;&#x70B9;&#x521B;&#x5EFA;&#x548C;&#x5206;&#x53D1;-kube-apiserver-systemd-unit-&#x6587;&#x4EF6;">&#x4E3A;&#x5404;&#x8282;&#x70B9;&#x521B;&#x5EFA;&#x548C;&#x5206;&#x53D1; kube-apiserver systemd unit &#x6587;&#x4EF6;</h4>
+<p>&#x6211;&#x4EEC;&#x53EA;&#x7528;master01&#xFF0C;&#x66FF;&#x6362;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4E3A;&#x5404;&#x8282;&#x70B9;&#x521B;&#x5EFA; systemd unit &#x6587;&#x4EF6;&#xFF1A;</p>
+<pre><code>export NODE_IP=&quot;192.168.10.232&quot;
+sed -e &quot;s/##NODE_IP##/${NODE_IP}/&quot; kube-apiserver.service.template &gt; kube-apiserver-${NODE_IP}.service
+cp kube-apiserver-${NODE_IP}.service /etc/systemd/system/kube-apiserver.service
+</code></pre><p><strong><em>PS:</em></strong></p>
+<pre><code>&#x5FC5;&#x987B;&#x5148;&#x521B;&#x5EFA;&#x65E5;&#x5FD7;&#x76EE;&#x5F55;&#xFF1B;
+&#x6587;&#x4EF6;&#x91CD;&#x547D;&#x540D;&#x4E3A; kube-apiserver.service;
+</code></pre><hr>
+<h4 id="&#x542F;&#x52A8;-kube-apiserver-&#x670D;&#x52A1;">&#x542F;&#x52A8; kube-apiserver &#x670D;&#x52A1;</h4>
+<pre><code># systemctl daemon-reload &amp;&amp; systemctl enable kube-apiserver &amp;&amp; systemctl restart kube-apiserver
+</code></pre><hr>
+<h4 id="&#x6253;&#x5370;-kube-apiserver-&#x5199;&#x5165;-etcd-&#x7684;&#x6570;&#x636E;">&#x6253;&#x5370; kube-apiserver &#x5199;&#x5165; etcd &#x7684;&#x6570;&#x636E;</h4>
+<pre><code>ETCDCTL_API=3 etcdctl \
+    --endpoints=${ETCD_ENDPOINTS} \
+    --cacert=/etc/kubernetes/cert/ca.pem \
+    --cert=/etc/etcd/cert/etcd.pem \
+    --key=/etc/etcd/cert/etcd-key.pem \
+    get /registry/ --prefix --keys-only
+</code></pre><hr>
+<h4 id="&#x68C0;&#x67E5;&#x96C6;&#x7FA4;&#x4FE1;&#x606F;">&#x68C0;&#x67E5;&#x96C6;&#x7FA4;&#x4FE1;&#x606F;</h4>
+<pre><code>[root@master01 ~]# kubectl cluster-info
+Kubernetes master is running at https://192.168.10.232:6443
+
+To further debug and diagnose cluster problems, use &apos;kubectl cluster-info dump&apos;.
+[root@master01 ~]# kubectl get all --all-namespaces
+NAMESPACE   NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+default     service/kubernetes   ClusterIP   10.254.0.1   &lt;none&gt;        443/TCP   12m
+[root@master01 ~]# kubectl get componentstatuses
+NAME                 STATUS      MESSAGE                                                                                     ERROR
+scheduler            Unhealthy   Get http://127.0.0.1:10251/healthz: dial tcp 127.0.0.1:10251: connect: connection refused   
+controller-manager   Unhealthy   Get http://127.0.0.1:10252/healthz: dial tcp 127.0.0.1:10252: connect: connection refused   
+etcd-0               Healthy     {&quot;health&quot;:&quot;true&quot;}                                                                           
+[root@master01 ~]#
+</code></pre><p><strong><em>PS:</em></strong></p>
+<p>&#x5982;&#x679C;&#x6267;&#x884C; kubectl &#x547D;&#x4EE4;&#x5F0F;&#x65F6;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x4F7F;&#x7528;&#x7684; ~/.kube/config &#x6587;&#x4EF6;&#x4E0D;&#x5BF9;&#xFF0C;&#x8BF7;&#x5207;&#x6362;&#x5230;&#x6B63;&#x786E;&#x7684;&#x8D26;&#x6237;&#x540E;&#x518D;&#x6267;&#x884C;&#x8BE5;&#x547D;&#x4EE4;&#xFF1A;
+The connection to the server localhost:8080 was refused - did you specify the right host or port?
+&#x6267;&#x884C; kubectl get componentstatuses &#x547D;&#x4EE4;&#x65F6;&#xFF0C;apiserver &#x9ED8;&#x8BA4;&#x5411; 127.0.0.1 &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x3002;&#x5F53; controller-manager&#x3001;scheduler &#x4EE5;&#x96C6;&#x7FA4;&#x6A21;&#x5F0F;&#x8FD0;&#x884C;&#x65F6;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x548C; kube-apiserver &#x4E0D;&#x5728;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x8FD9;&#x65F6; controller-manager &#x6216; scheduler &#x7684;&#x72B6;&#x6001;&#x4E3A; Unhealthy&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x4EEC;&#x5DE5;&#x4F5C;&#x6B63;&#x5E38;&#x3002;</p>
+<h4 id="&#x6388;&#x4E88;-kubernetes-&#x8BC1;&#x4E66;&#x8BBF;&#x95EE;-kubelet-api-&#x7684;&#x6743;&#x9650;">&#x6388;&#x4E88; kubernetes &#x8BC1;&#x4E66;&#x8BBF;&#x95EE; kubelet API &#x7684;&#x6743;&#x9650;</h4>
+<p>&#x5728;&#x6267;&#x884C; kubectl exec&#x3001;run&#x3001;logs &#x7B49;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;apiserver &#x4F1A;&#x8F6C;&#x53D1;&#x5230; kubelet&#x3002;&#x8FD9;&#x91CC;&#x5B9A;&#x4E49; RBAC &#x89C4;&#x5219;&#xFF0C;&#x6388;&#x6743; apiserver &#x8C03;&#x7528; kubelet API&#x3002;</p>
+<pre><code>$ kubectl create clusterrolebinding kube-apiserver:kubelet-apis --clusterrole=system:kubelet-api-admin --user kubernetes
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="master.html" class="navigation navigation-prev " aria-label="Previous page: 06.部署master节点">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kube-controller-manager.html" class="navigation navigation-next " aria-label="Next page: 06-3.controller-manager集群">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"06-2.api-server","date":"2019-03-16T08:24:24.000Z","draft":false,"level":"1.8.1","depth":2,"next":{"title":"06-3.controller-manager集群","level":"1.8.2","depth":2,"path":"kube-controller-manager.md","ref":"kube-controller-manager.md","articles":[]},"previous":{"title":"06.部署master节点","level":"1.8","depth":1,"path":"master.md","ref":"master.md","articles":[{"title":"06-2.api-server","level":"1.8.1","depth":2,"path":"kube-apiserver.md","ref":"kube-apiserver.md","articles":[]},{"title":"06-3.controller-manager集群","level":"1.8.2","depth":2,"path":"kube-controller-manager.md","ref":"kube-controller-manager.md","articles":[]},{"title":"06-4.scheduler集群","level":"1.8.3","depth":2,"path":"kube-scheduler集群.md","ref":"kube-scheduler集群.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"kube-apiserver.md","mtime":"2019-03-16T09:09:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-20T13:46:05.974Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

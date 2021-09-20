@@ -1,0 +1,559 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>04.部署etcd集群 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="flannel.html" />
+    
+    
+    <link rel="prev" href="kubectl.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    00.组件版本和配置策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="os-init.html">
+            
+                <a href="os-init.html">
+            
+                    
+                    01.系统初始化和全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ca.html">
+            
+                <a href="ca.html">
+            
+                    
+                    02.创建CA证书和秘钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="kubectl.html">
+            
+                <a href="kubectl.html">
+            
+                    
+                    03.部署kubectl命令行工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="etcd.html">
+            
+                <a href="etcd.html">
+            
+                    
+                    04.部署etcd集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="flannel.html">
+            
+                <a href="flannel.html">
+            
+                    
+                    05.部署flannel网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="master.html">
+            
+                <a href="master.html">
+            
+                    
+                    06.部署master节点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="kube-apiserver.html">
+            
+                <a href="kube-apiserver.html">
+            
+                    
+                    06-2.api-server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="kube-controller-manager.html">
+            
+                <a href="kube-controller-manager.html">
+            
+                    
+                    06-3.controller-manager集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="kube-scheduler集群.html">
+            
+                <a href="kube-scheduler集群.html">
+            
+                    
+                    06-4.scheduler集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    07.部署worker节点
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    07-1.docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="kubelet.html">
+            
+                <a href="kubelet.html">
+            
+                    
+                    07-2.kubelet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="kube-proxy.html">
+            
+                <a href="kube-proxy.html">
+            
+                    
+                    07-3.kube-proxy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="verify.html">
+            
+                <a href="verify.html">
+            
+                    
+                    08.验证集群功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >04.部署etcd集群</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>etcd &#x662F;&#x57FA;&#x4E8E; Raft &#x7684;&#x5206;&#x5E03;&#x5F0F; key-value &#x5B58;&#x50A8;&#x7CFB;&#x7EDF;&#xFF0C;&#x7531; CoreOS &#x5F00;&#x53D1;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#x3001;&#x5171;&#x4EAB;&#x914D;&#x7F6E;&#x4EE5;&#x53CA;&#x5E76;&#x53D1;&#x63A7;&#x5236;&#xFF08;&#x5982; leader &#x9009;&#x4E3E;&#x3001;&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x7B49;&#xFF09;&#x3002;kubernetes &#x4F7F;&#x7528; etcd &#x5B58;&#x50A8;&#x6240;&#x6709;&#x8FD0;&#x884C;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x6863;&#x4ECB;&#x7ECD;&#x90E8;&#x7F72;&#x4E00;&#x4E2A;&#x4E09;&#x8282;&#x70B9;&#x9AD8;&#x53EF;&#x7528; etcd &#x96C6;&#x7FA4;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;<br>&#x4E0B;&#x8F7D;&#x548C;&#x5206;&#x53D1; etcd &#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#xFF1B;
+&#x521B;&#x5EFA; etcd &#x96C6;&#x7FA4;&#x5404;&#x8282;&#x70B9;&#x7684; x509 &#x8BC1;&#x4E66;&#xFF0C;&#x7528;&#x4E8E;&#x52A0;&#x5BC6;&#x5BA2;&#x6237;&#x7AEF;(&#x5982; etcdctl) &#x4E0E; etcd &#x96C6;&#x7FA4;&#x3001;etcd &#x96C6;&#x7FA4;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x6D41;&#xFF1B;<br>&#x521B;&#x5EFA; etcd &#x7684; systemd unit &#x6587;&#x4EF6;&#xFF0C;&#x914D;&#x7F6E;&#x670D;&#x52A1;&#x53C2;&#x6570;&#xFF1B;<br>&#x68C0;&#x67E5;&#x96C6;&#x7FA4;&#x5DE5;&#x4F5C;&#x72B6;&#x6001;&#xFF1B;  </p>
+<p>etcd &#x96C6;&#x7FA4;&#x5404;&#x8282;&#x70B9;&#x7684;&#x540D;&#x79F0;&#x548C; IP &#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>master01: 192.168.10.232
+</code></pre><hr>
+<h4 id="&#x4E0B;&#x8F7D;&#x548C;&#x5206;&#x53D1;-etcd-&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;">&#x4E0B;&#x8F7D;&#x548C;&#x5206;&#x53D1; etcd &#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</h4>
+<pre><code># wget https://github.com/coreos/etcd/releases/download/v3.3.7/etcd-v3.3.7-linux-amd64.tar.gz
+# tar -xvf etcd-v3.3.7-linux-amd64.tar.gz
+# cp etcd-v3.3.7-linux-amd64/etcd* /opt/k8s/bin/
+</code></pre><hr>
+<h4 id="&#x521B;&#x5EFA;-etcd-&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;">&#x521B;&#x5EFA; etcd &#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;</h4>
+<p><strong><em>&#x521B;&#x5EFA;&#x8BC1;&#x4E66;&#x7B7E;&#x540D;&#x8BF7;&#x6C42;&#xFF1A;</em></strong></p>
+<pre><code>cat &gt; etcd-csr.json &lt;&lt;EOF
+{
+  &quot;CN&quot;: &quot;etcd&quot;,
+  &quot;hosts&quot;: [
+    &quot;127.0.0.1&quot;,
+    &quot;192.168.10.232&quot;,
+    &quot;192.168.10.242&quot;,
+    &quot;192.168.10.243&quot;
+  ],
+  &quot;key&quot;: {
+    &quot;algo&quot;: &quot;rsa&quot;,
+    &quot;size&quot;: 2048
+  },
+  &quot;names&quot;: [
+    {
+      &quot;C&quot;: &quot;CN&quot;,
+      &quot;ST&quot;: &quot;BeiJing&quot;,
+      &quot;L&quot;: &quot;BeiJing&quot;,
+      &quot;O&quot;: &quot;k8s&quot;,
+      &quot;OU&quot;: &quot;4Paradigm&quot;
+    }
+  ]
+}
+EOF
+</code></pre><p><strong><em>PS*</em></strong></p>
+<pre><code>hosts &#x5B57;&#x6BB5;&#x6307;&#x5B9A;&#x6388;&#x6743;&#x4F7F;&#x7528;&#x8BE5;&#x8BC1;&#x4E66;&#x7684; etcd &#x8282;&#x70B9; IP &#x6216;&#x57DF;&#x540D;&#x5217;&#x8868;&#xFF0C;&#x8FD9;&#x91CC;&#x5C06; master01,node01,node02 IP &#x90FD;&#x5217;&#x5728;&#x5176;&#x4E2D;,&#x7528;&#x4E8E;&#x4EE5;&#x540E;&#x6269;&#x5C55;etcd&#x96C6;&#x7FA4;&#xFF1B;
+</code></pre><p>&#x751F;&#x6210;&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;&#xFF1A;</p>
+<pre><code>cfssl gencert -ca=/etc/kubernetes/cert/ca.pem \
+    -ca-key=/etc/kubernetes/cert/ca-key.pem \
+    -config=/etc/kubernetes/cert/ca-config.json \
+    -profile=kubernetes etcd-csr.json | cfssljson -bare etcd
+ls etcd*
+</code></pre><p>&#x5206;&#x53D1;&#x751F;&#x6210;&#x7684;&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;&#x5230;&#x5404; etcd &#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code>&#x5982;&#x679C;&#x4F7F;&#x7528;etcd&#x96C6;&#x7FA4;&#xFF0C;&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#x9700;&#x8981;&#x5728;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x8FD0;&#x884C;
+# cp etcd*.pem /etc/etcd/cert/
+# chown -R k8s /etc/etcd/cert/
+</code></pre><hr>
+<h4 id="&#x521B;&#x5EFA;-etcd-&#x7684;-systemd-unit-&#x6A21;&#x677F;&#x6587;&#x4EF6;">&#x521B;&#x5EFA; etcd &#x7684; systemd unit &#x6A21;&#x677F;&#x6587;&#x4EF6;</h4>
+<pre><code>export ETCD_NODES=&quot;kube-node1=https://192.168.10.232:2380&quot;
+
+cat &gt; etcd.service.template &lt;&lt;EOF
+[Unit]
+Description=Etcd Server
+After=network.target
+After=network-online.target
+Wants=network-online.target
+Documentation=https://github.com/coreos
+
+[Service]
+User=k8s
+Type=notify
+WorkingDirectory=/var/lib/etcd/
+ExecStart=/opt/k8s/bin/etcd \\
+  --data-dir=/var/lib/etcd \\
+  --name=##NODE_NAME## \\
+  --cert-file=/etc/etcd/cert/etcd.pem \\
+  --key-file=/etc/etcd/cert/etcd-key.pem \\
+  --trusted-ca-file=/etc/kubernetes/cert/ca.pem \\
+  --peer-cert-file=/etc/etcd/cert/etcd.pem \\
+  --peer-key-file=/etc/etcd/cert/etcd-key.pem \\
+  --peer-trusted-ca-file=/etc/kubernetes/cert/ca.pem \\
+  --peer-client-cert-auth \\
+  --client-cert-auth \\
+  --listen-peer-urls=https://##NODE_IP##:2380 \\
+  --initial-advertise-peer-urls=https://##NODE_IP##:2380 \\
+  --listen-client-urls=https://##NODE_IP##:2379,http://127.0.0.1:2379 \\
+  --advertise-client-urls=https://##NODE_IP##:2379 \\
+  --initial-cluster-token=etcd-cluster-0 \\
+  --initial-cluster=${ETCD_NODES} \\
+  --initial-cluster-state=new
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+EOF
+&#x66FF;&#x6362;&#x771F;&#x662F;&#x7684;NODE_NAME &#x548C;NODE_IP
+# export NODE_NAME=master01
+# export NODE_IP=192.168.10.232
+# sed -e &quot;s/##NODE_NAME##/${NODE_NAME}/&quot; -e &quot;s/##NODE_IP##/${NODE_IP}/&quot; etcd.service.template &gt; etcd.service
+# cp etcd.service /usr/lib/systemd/system/
+</code></pre><p><strong><em>PS:</em></strong></p>
+<pre><code>User&#xFF1A;&#x6307;&#x5B9A;&#x4EE5; k8s &#x8D26;&#x6237;&#x8FD0;&#x884C;&#xFF1B;
+WorkingDirectory&#x3001;--data-dir&#xFF1A;&#x6307;&#x5B9A;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#x548C;&#x6570;&#x636E;&#x76EE;&#x5F55;&#x4E3A; /var/lib/etcd&#xFF0C;&#x9700;&#x5728;&#x542F;&#x52A8;&#x670D;&#x52A1;&#x524D;&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#xFF1B;
+--name&#xFF1A;&#x6307;&#x5B9A;&#x8282;&#x70B9;&#x540D;&#x79F0;&#xFF0C;&#x5F53; --initial-cluster-state &#x503C;&#x4E3A; new &#x65F6;&#xFF0C;--name &#x7684;&#x53C2;&#x6570;&#x503C;&#x5FC5;&#x987B;&#x4F4D;&#x4E8E; --initial-cluster &#x5217;&#x8868;&#x4E2D;&#xFF1B;
+--cert-file&#x3001;--key-file&#xFF1A;etcd server &#x4E0E; client &#x901A;&#x4FE1;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;&#xFF1B;
+--trusted-ca-file&#xFF1A;&#x7B7E;&#x540D; client &#x8BC1;&#x4E66;&#x7684; CA &#x8BC1;&#x4E66;&#xFF0C;&#x7528;&#x4E8E;&#x9A8C;&#x8BC1; client &#x8BC1;&#x4E66;&#xFF1B;
+--peer-cert-file&#x3001;--peer-key-file&#xFF1A;etcd &#x4E0E; peer &#x901A;&#x4FE1;&#x4F7F;&#x7528;&#x7684;&#x8BC1;&#x4E66;&#x548C;&#x79C1;&#x94A5;&#xFF1B;
+--peer-trusted-ca-file&#xFF1A;&#x7B7E;&#x540D; peer &#x8BC1;&#x4E66;&#x7684; CA &#x8BC1;&#x4E66;&#xFF0C;&#x7528;&#x4E8E;&#x9A8C;&#x8BC1; peer &#x8BC1;&#x4E66;&#xFF1B;
+</code></pre><hr>
+<h4 id="&#x542F;&#x52A8;-etcd-&#x670D;&#x52A1;">&#x542F;&#x52A8; etcd &#x670D;&#x52A1;</h4>
+<pre><code>&#x786E;&#x4FDD;data-dir &#x662F;&#x5426;&#x5B58;&#x5728;&#xFF1A;
+# mkdir -p /var/lib/etcd &amp;&amp; chown -R k8s /var/lib/etcd
+&#x542F;&#x52A8;etcd:
+# systemctl daemon-reload &amp;&amp; systemctl enable etcd &amp;&amp; systemctl restart etcd
+</code></pre><h4 id="&#x9A8C;&#x8BC1;etcd-&#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;">&#x9A8C;&#x8BC1;etcd &#x670D;&#x52A1;&#x662F;&#x5426;&#x6B63;&#x5E38;</h4>
+<pre><code>export node_ip=192.168.10.232
+ETCDCTL_API=3 etcdctl \
+    --endpoints=https://${node_ip}:2379 \
+    --cacert=/etc/kubernetes/cert/ca.pem \
+    --cert=/etc/etcd/cert/etcd.pem \
+    --key=/etc/etcd/cert/etcd-key.pem endpoint health
+
+https://192.168.10.232:2379 is healthy: successfully committed proposal: took = 1.230902ms
+</code></pre><p>&#x8F93;&#x51FA;&#x5747;&#x4E3A; healthy &#x65F6;&#x8868;&#x793A;&#x96C6;&#x7FA4;&#x670D;&#x52A1;&#x6B63;&#x5E38;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kubectl.html" class="navigation navigation-prev " aria-label="Previous page: 03.部署kubectl命令行工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="flannel.html" class="navigation navigation-next " aria-label="Next page: 05.部署flannel网络">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"04.部署etcd集群","date":"2019-03-16T06:35:12.000Z","draft":false,"level":"1.6","depth":1,"next":{"title":"05.部署flannel网络","level":"1.7","depth":1,"path":"flannel.md","ref":"flannel.md","articles":[]},"previous":{"title":"03.部署kubectl命令行工具","level":"1.5","depth":1,"path":"kubectl.md","ref":"kubectl.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"etcd.md","mtime":"2019-03-16T07:20:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-20T13:46:05.974Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
